@@ -6,7 +6,7 @@ def main():
     if len(sys.argv) != 2:
         print("Usage: python samplit-vivekccherian.py <filename>", file=sys.stderr)
         sys.exit(1)
-
+    # Get the input filename from the command line (hw_1b)
     filename = sys.argv[1]
     with open(filename, "r", encoding="utf-8") as f:
         for line in f:
