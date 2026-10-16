@@ -52,7 +52,7 @@ def sum_view(request):
         n2 = to_number(request.GET["n2"])
     except (KeyError, ValueError):
         return HttpResponseBadRequest("n1 and n2 must be provided and numeric")
-    return HttpResponse(f'<p>{json.dumps({"sum": n1 + n2})}</p>')
+    return HttpResponse(f"<p>{n1 + n2}</p>")
 
 # ---------------------------------------------------------------------------
 # HW4  — user creation
